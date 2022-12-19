@@ -22,9 +22,9 @@
     "installable": True,
     'assets': {
         'web.assets_backend': [
-            'sale_layout_category_hide_detail_oca/static/src/js/boolean_fa_icon_widget.js',
-            'sale_layout_category_hide_detail_oca/static/src/js/hide_details_translations.js',
-            'sale_layout_category_hide_detail_oca/static/src/js/sale_layout_category_hide_detail.js',                        
+            'sale_layout_category_hide_detail/static/src/js/boolean_fa_icon_widget.js',
+            'sale_layout_category_hide_detail/static/src/js/hide_details_translations.js',
+            'sale_layout_category_hide_detail/static/src/js/sale_layout_category_hide_detail.js',                        
         ],
     },    
 }
