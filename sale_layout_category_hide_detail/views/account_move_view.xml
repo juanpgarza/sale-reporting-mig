@@ -23,7 +23,7 @@
                         'hover_false': 'Switch to: details shown',
                     },
                 }"
-                    attrs="{'invisible': [('display_type', '!=', 'line_section')]}"
+                    attrs="{'invisible': [('display_type', '!=', 'line_section')], 'column_invisible': [('parent.move_type', '=', 'in_invoice')]}"
                 />
         <field
                     name="show_section_subtotal"
@@ -39,7 +39,7 @@
                             'hover_false': 'Switch to: section subtotal shown',
                         },
                    }"
-                    attrs="{'invisible': ['|', ('display_type', '!=', 'line_section'), ('display_type', '=', 'line_section'), ('show_details', '=', True)]}"
+                    attrs="{'invisible': ['|', ('display_type', '!=', 'line_section'), ('display_type', '=', 'line_section'), ('show_details', '=', True)], 'column_invisible': [('parent.move_type', '=', 'in_invoice')]}"
                 />
         <field
                     name="show_subtotal"
@@ -55,7 +55,7 @@
                         'hover_false': 'Switch to: subtotal shown',
                     },
                 }"
-                    attrs="{'invisible': ['|', ('display_type', '!=', 'line_section'), ('show_details', '!=', True)]}"
+                    attrs="{'invisible': ['|', ('display_type', '!=', 'line_section'), ('show_details', '!=', True)], 'column_invisible': [('parent.move_type', '=', 'in_invoice')]}"
                 />
         <field
                     name="show_line_amount"
@@ -71,7 +71,7 @@
                         'hover_false': 'Switch to: line amount shown',
                     },
                }"
-                    attrs="{'invisible': ['|', ('display_type', '!=', 'line_section'), ('show_details', '!=', True)]}"
+                    attrs="{'invisible': ['|', ('display_type', '!=', 'line_section'), ('show_details', '!=', True)], 'column_invisible': [('parent.move_type', '=', 'in_invoice')]}"
                 />
       </xpath>
 
